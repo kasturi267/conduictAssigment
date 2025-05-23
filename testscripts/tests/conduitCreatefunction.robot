@@ -15,11 +15,6 @@ ${articleTags}    EMPTY
 Create a New Article with    ${articleTitle}    ${about}    ${articleDescription}    ${articleTags}
 
 *** Keywords ***
-# Login And Open Browser With Storage State
-#     ${state_file}=    Login And Save Storage State
-#     Open Browser With Storage State    ${state_file}
-#     Verify Successful Login
-
 Create New Article
     [Arguments]    ${articleTitle}    ${about}    ${articleDescription}    ${articleTags}
     Log    Title: ${articleTitle}
