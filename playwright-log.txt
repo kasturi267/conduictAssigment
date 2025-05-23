@@ -1,0 +1,482 @@
+{"level":30,"time":"2025-05-23T04:15:48.355Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Listening on 127.0.0.1:51661"}
+(node:33936) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-05-23T04:15:48.820Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-05-23T04:15:51.200Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-05-23T04:15:51.201Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-05-23T04:15:51.201Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-05-23T04:15:51.215Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-05-23T04:15:51.215Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-23T04:15:51.215Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Trace file: "}
+{"level":30,"time":"2025-05-23T04:15:51.215Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-05-23T04:15:51.225Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active context"}
+{"level":30,"time":"2025-05-23T04:15:51.225Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newContext"}
+{"level":30,"time":"2025-05-23T04:15:51.234Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-23T04:15:51.235Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-23T04:15:53.078Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-23T04:15:53.078Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active page"}
+{"level":30,"time":"2025-05-23T04:15:55.518Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-23T04:15:55.524Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:15:55.524Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Login in page."}
+{"level":30,"time":"2025-05-23T04:15:55.580Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:15:55.586Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:15:55.586Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Login in page."}
+{"level":30,"time":"2025-05-23T04:15:55.654Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:15:55.660Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:15:55.661Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='email'] in page."}
+{"level":30,"time":"2025-05-23T04:15:55.875Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:15:55.881Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:15:55.882Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='password'] in page."}
+{"level":30,"time":"2025-05-23T04:15:56.021Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:15:56.027Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:15:56.027Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with xpath=//button[text()=\"Login\"] in page."}
+{"level":30,"time":"2025-05-23T04:15:56.038Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:15:56.045Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:15:56.045Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with xpath=//button[text()=\"Login\"] in page."}
+{"level":30,"time":"2025-05-23T04:15:56.085Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:15:56.092Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:15:56.093Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.nav-link.dropdown-toggle.cursor-pointer in page."}
+{"level":30,"time":"2025-05-23T04:15:56.427Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:15:56.433Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:15:56.433Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.nav-link.dropdown-toggle.cursor-pointer in page."}
+{"level":30,"time":"2025-05-23T04:15:56.471Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.nav-link.dropdown-toggle.cursor-pointer containing RobotTestAutomation"}
+{"level":30,"time":"2025-05-23T04:15:56.471Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:15:56.511Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-05-23T04:15:56.524Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Removed page=07e49a62-ce6a-4386-817c-bc787ae1457d from context=8cb2b377-e6cf-4a0c-a19e-1899767706a2 page stack"}
+{"level":30,"time":"2025-05-23T04:15:56.843Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-05-23T04:15:56.848Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-05-23T04:16:06.364Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-05-23T04:16:06.364Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-05-23T04:16:06.364Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-05-23T04:16:06.389Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-05-23T04:16:06.389Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"storageState\":\"C:\\\\Users\\\\PTQ1KOR\\\\conduit-pom-project\\\\browser\\\\state\\\\1c31feab-a26f-450c-aa8e-e7e765351b37.json\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-05-23T04:16:06.389Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-23T04:16:06.389Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Trace file: "}
+{"level":30,"time":"2025-05-23T04:16:10.729Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active context"}
+{"level":30,"time":"2025-05-23T04:16:10.729Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newContext"}
+{"level":30,"time":"2025-05-23T04:16:10.737Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-23T04:16:10.737Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-23T04:16:11.339Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-23T04:16:11.339Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active page"}
+{"level":30,"time":"2025-05-23T04:16:12.696Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-23T04:16:12.713Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:12.713Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.nav-link.dropdown-toggle.cursor-pointer in page."}
+{"level":30,"time":"2025-05-23T04:16:12.840Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:12.859Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:12.860Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.nav-link.dropdown-toggle.cursor-pointer in page."}
+{"level":30,"time":"2025-05-23T04:16:12.938Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.nav-link.dropdown-toggle.cursor-pointer containing RobotTestAutomation"}
+{"level":30,"time":"2025-05-23T04:16:12.938Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:12.953Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:12.961Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:12.995Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:12.995Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=New Article in page."}
+{"level":30,"time":"2025-05-23T04:16:13.010Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:13.024Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:13.024Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=New Article in page."}
+{"level":30,"time":"2025-05-23T04:16:13.132Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:13.150Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:13.151Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[placeholder='Article Title'] in page."}
+{"level":30,"time":"2025-05-23T04:16:13.168Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:13.180Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:13.180Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[placeholder='Article Title'] in page."}
+{"level":30,"time":"2025-05-23T04:16:13.564Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:13.581Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:13.581Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='description'] in page."}
+{"level":30,"time":"2025-05-23T04:16:14.006Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:14.020Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:14.020Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with textarea[name='body'] in page."}
+{"level":30,"time":"2025-05-23T04:16:14.474Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:14.499Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:14.499Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='tags'] in page."}
+{"level":30,"time":"2025-05-23T04:16:14.811Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:14.826Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:14.826Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Publish Article\") in page."}
+{"level":30,"time":"2025-05-23T04:16:14.838Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:14.847Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:14.847Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Publish Article\") in page."}
+{"level":30,"time":"2025-05-23T04:16:14.908Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:19.922Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:19.922Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:16:19.932Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:19.937Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:19.937Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:16:19.958Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-page h1 containing RobotFramework"}
+{"level":30,"time":"2025-05-23T04:16:19.958Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:19.966Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:19.968Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:19.971Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:19.972Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:19.980Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:19.980Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=New Article in page."}
+{"level":30,"time":"2025-05-23T04:16:19.983Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:19.986Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:19.986Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=New Article in page."}
+{"level":30,"time":"2025-05-23T04:16:20.037Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:20.041Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[placeholder='Article Title'] in page."}
+{"level":30,"time":"2025-05-23T04:16:20.041Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:20.045Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:20.050Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:20.050Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[placeholder='Article Title'] in page."}
+{"level":30,"time":"2025-05-23T04:16:20.351Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:20.362Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:20.362Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='description'] in page."}
+{"level":30,"time":"2025-05-23T04:16:20.684Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:20.696Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:20.696Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with textarea[name='body'] in page."}
+{"level":30,"time":"2025-05-23T04:16:21.021Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:21.032Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:21.032Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='tags'] in page."}
+{"level":30,"time":"2025-05-23T04:16:21.258Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:21.271Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:21.272Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Publish Article\") in page."}
+{"level":30,"time":"2025-05-23T04:16:21.281Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:21.289Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:21.290Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Publish Article\") in page."}
+{"level":30,"time":"2025-05-23T04:16:21.360Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:26.370Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:26.370Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:16:26.375Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:26.381Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:26.381Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:16:26.401Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-page h1 containing RobotFramework1"}
+{"level":30,"time":"2025-05-23T04:16:26.401Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:26.408Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:26.411Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:26.415Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:26.416Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:26.423Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:26.423Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=New Article in page."}
+{"level":30,"time":"2025-05-23T04:16:26.427Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:26.431Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:26.431Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=New Article in page."}
+{"level":30,"time":"2025-05-23T04:16:26.472Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:26.480Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:26.480Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[placeholder='Article Title'] in page."}
+{"level":30,"time":"2025-05-23T04:16:26.485Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:26.490Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:26.491Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[placeholder='Article Title'] in page."}
+{"level":30,"time":"2025-05-23T04:16:26.760Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:26.766Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:26.766Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='description'] in page."}
+{"level":30,"time":"2025-05-23T04:16:27.161Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:27.173Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:27.174Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with textarea[name='body'] in page."}
+{"level":30,"time":"2025-05-23T04:16:27.488Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:27.499Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:27.499Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='tags'] in page."}
+{"level":30,"time":"2025-05-23T04:16:27.683Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:27.693Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:27.694Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Publish Article\") in page."}
+{"level":30,"time":"2025-05-23T04:16:27.700Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:27.709Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:27.709Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Publish Article\") in page."}
+{"level":30,"time":"2025-05-23T04:16:27.751Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:32.760Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:32.761Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:16:32.766Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:32.772Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:32.772Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:16:32.795Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-page h1 containing RobotFramework2"}
+{"level":30,"time":"2025-05-23T04:16:32.796Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:32.807Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.811Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.819Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.822Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.825Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.827Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.830Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.832Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.836Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.838Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.841Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active context"}
+{"level":30,"time":"2025-05-23T04:16:32.841Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changing current active page: page=7885865b-be2a-468b-b8bd-ce04a408d8d3"}
+{"level":30,"time":"2025-05-23T04:16:32.841Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active page"}
+{"level":30,"time":"2025-05-23T04:16:32.846Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-05-23T04:16:32.871Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Removed page=4047d150-7d77-4119-9381-250273dc67e1 from context=59fb72a4-d7bf-427a-951b-add2fe97f125 page stack"}
+{"level":30,"time":"2025-05-23T04:16:32.915Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-05-23T04:16:32.993Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:32.993Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:33.001Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-05-23T04:16:34.981Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-05-23T04:16:34.981Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-05-23T04:16:34.981Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-05-23T04:16:34.986Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-05-23T04:16:34.986Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-05-23T04:16:34.986Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-23T04:16:34.986Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Trace file: "}
+{"level":30,"time":"2025-05-23T04:16:34.991Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active context"}
+{"level":30,"time":"2025-05-23T04:16:34.991Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newContext"}
+{"level":30,"time":"2025-05-23T04:16:34.995Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-23T04:16:34.995Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-23T04:16:36.435Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-23T04:16:36.435Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active page"}
+{"level":30,"time":"2025-05-23T04:16:38.217Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-23T04:16:38.223Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:38.223Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Login in page."}
+{"level":30,"time":"2025-05-23T04:16:38.288Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:38.293Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:38.293Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Login in page."}
+{"level":30,"time":"2025-05-23T04:16:38.339Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:38.347Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:38.347Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='email'] in page."}
+{"level":30,"time":"2025-05-23T04:16:38.512Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:38.523Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:38.523Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with input[name='password'] in page."}
+{"level":30,"time":"2025-05-23T04:16:38.633Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:16:38.638Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:38.638Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with xpath=//button[text()=\"Login\"] in page."}
+{"level":30,"time":"2025-05-23T04:16:38.643Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:38.648Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:38.648Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with xpath=//button[text()=\"Login\"] in page."}
+{"level":30,"time":"2025-05-23T04:16:38.702Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:38.706Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:38.706Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.nav-link.dropdown-toggle.cursor-pointer in page."}
+{"level":30,"time":"2025-05-23T04:16:39.049Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:39.055Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:39.055Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.nav-link.dropdown-toggle.cursor-pointer in page."}
+{"level":30,"time":"2025-05-23T04:16:39.088Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.nav-link.dropdown-toggle.cursor-pointer containing RobotTestAutomation"}
+{"level":30,"time":"2025-05-23T04:16:39.088Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:39.106Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-05-23T04:16:39.109Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Removed page=f2c5c116-52b0-431a-9c24-e620aab6544a from context=da3ed521-7465-4e74-937e-ee6618029124 page stack"}
+{"level":30,"time":"2025-05-23T04:16:39.373Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-05-23T04:16:39.378Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-05-23T04:16:39.379Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-05-23T04:16:39.385Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-05-23T04:16:39.385Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"storageState\":\"C:\\\\Users\\\\PTQ1KOR\\\\conduit-pom-project\\\\browser\\\\state\\\\c8d64d45-eb85-427a-9ec8-6499c9b06127.json\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-05-23T04:16:39.385Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-23T04:16:39.385Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Trace file: "}
+{"level":30,"time":"2025-05-23T04:16:40.181Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active context"}
+{"level":30,"time":"2025-05-23T04:16:40.181Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newContext"}
+{"level":30,"time":"2025-05-23T04:16:40.190Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-23T04:16:40.190Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-23T04:16:40.821Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-23T04:16:40.822Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active page"}
+{"level":30,"time":"2025-05-23T04:16:42.364Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-23T04:16:42.380Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:42.380Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.nav-link.dropdown-toggle.cursor-pointer in page."}
+{"level":30,"time":"2025-05-23T04:16:42.494Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:42.499Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:42.499Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.nav-link.dropdown-toggle.cursor-pointer in page."}
+{"level":30,"time":"2025-05-23T04:16:42.578Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.nav-link.dropdown-toggle.cursor-pointer containing RobotTestAutomation"}
+{"level":30,"time":"2025-05-23T04:16:42.578Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:42.583Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:42.586Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:16:42.601Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:42.601Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:16:42.606Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:42.614Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:42.614Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:16:42.749Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:42.757Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:42.757Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Global Feed\") in page."}
+{"level":30,"time":"2025-05-23T04:16:42.894Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:47.906Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getElements"}
+{"level":30,"time":"2025-05-23T04:16:47.906Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is disabled, return Locator: div.article-preview in page."}
+{"level":30,"time":"2025-05-23T04:16:47.906Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2025-05-23T04:16:47.916Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Found 3 elements."}
+{"level":30,"time":"2025-05-23T04:16:47.916Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getElements"}
+{"level":30,"time":"2025-05-23T04:16:47.921Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:47.921Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with div.article-preview >> nth=0 in page."}
+{"level":30,"time":"2025-05-23T04:16:47.990Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:53.007Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:53.007Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:16:53.014Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:53.021Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:53.021Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:16:53.045Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-page h1 containing RobotFramework2"}
+{"level":30,"time":"2025-05-23T04:16:53.045Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:53.052Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:53.052Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-content p in page."}
+{"level":30,"time":"2025-05-23T04:16:53.057Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:53.061Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:53.061Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-content p in page."}
+{"level":30,"time":"2025-05-23T04:16:53.074Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-content p containing testingRobotFrameworkScripts2"}
+{"level":30,"time":"2025-05-23T04:16:53.074Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:53.078Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:53.079Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=ul.tag-list li in page."}
+{"level":30,"time":"2025-05-23T04:16:53.082Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:53.085Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:53.085Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=ul.tag-list li in page."}
+{"level":30,"time":"2025-05-23T04:16:53.096Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=ul.tag-list li containing RobotFramework"}
+{"level":30,"time":"2025-05-23T04:16:53.096Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:16:53.100Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:53.100Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:16:53.103Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:16:53.106Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:53.107Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:16:53.149Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:53.154Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:53.154Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Global Feed\") in page."}
+{"level":30,"time":"2025-05-23T04:16:53.214Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:16:58.222Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getElements"}
+{"level":30,"time":"2025-05-23T04:16:58.222Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2025-05-23T04:16:58.222Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is disabled, return Locator: div.article-preview in page."}
+{"level":30,"time":"2025-05-23T04:16:58.231Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Found 3 elements."}
+{"level":30,"time":"2025-05-23T04:16:58.231Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getElements"}
+{"level":30,"time":"2025-05-23T04:16:58.237Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:16:58.237Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with div.article-preview >> nth=1 in page."}
+{"level":30,"time":"2025-05-23T04:16:58.284Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:03.298Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:03.299Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:17:03.305Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:03.310Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:03.310Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:17:03.331Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-page h1 containing RobotFramework1"}
+{"level":30,"time":"2025-05-23T04:17:03.331Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:03.338Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:03.338Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-content p in page."}
+{"level":30,"time":"2025-05-23T04:17:03.342Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:03.346Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:03.346Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-content p in page."}
+{"level":30,"time":"2025-05-23T04:17:03.357Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-content p containing testingRobotFrameworkScripts1"}
+{"level":30,"time":"2025-05-23T04:17:03.358Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:03.361Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:03.361Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=ul.tag-list li in page."}
+{"level":30,"time":"2025-05-23T04:17:03.363Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:03.365Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:03.365Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=ul.tag-list li in page."}
+{"level":30,"time":"2025-05-23T04:17:03.373Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=ul.tag-list li containing RobotFramework"}
+{"level":30,"time":"2025-05-23T04:17:03.373Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:03.377Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:03.377Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:17:03.379Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:03.382Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:03.382Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:17:03.416Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:03.422Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:03.422Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Global Feed\") in page."}
+{"level":30,"time":"2025-05-23T04:17:03.464Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:08.471Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getElements"}
+{"level":30,"time":"2025-05-23T04:17:08.471Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is disabled, return Locator: div.article-preview in page."}
+{"level":30,"time":"2025-05-23T04:17:08.471Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2025-05-23T04:17:08.480Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Found 3 elements."}
+{"level":30,"time":"2025-05-23T04:17:08.480Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getElements"}
+{"level":30,"time":"2025-05-23T04:17:08.487Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:08.487Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with div.article-preview >> nth=2 in page."}
+{"level":30,"time":"2025-05-23T04:17:08.532Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:13.549Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:13.549Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:17:13.554Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:13.558Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:13.558Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-page h1 in page."}
+{"level":30,"time":"2025-05-23T04:17:13.573Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-page h1 containing RobotFramework"}
+{"level":30,"time":"2025-05-23T04:17:13.573Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:13.579Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:13.579Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-content p in page."}
+{"level":30,"time":"2025-05-23T04:17:13.583Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:13.586Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:13.586Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-content p in page."}
+{"level":30,"time":"2025-05-23T04:17:13.597Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-content p containing testingRobotFrameworkScripts"}
+{"level":30,"time":"2025-05-23T04:17:13.598Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:13.602Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:13.602Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=ul.tag-list li in page."}
+{"level":30,"time":"2025-05-23T04:17:13.605Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:13.608Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:13.608Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=ul.tag-list li in page."}
+{"level":30,"time":"2025-05-23T04:17:13.615Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=ul.tag-list li containing RobotFramework"}
+{"level":30,"time":"2025-05-23T04:17:13.615Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:13.620Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:13.621Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:13.623Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:13.624Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:13.626Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:13.626Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:17:13.628Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:13.630Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:13.630Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:17:13.670Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:13.679Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:13.679Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Global Feed\") in page."}
+{"level":30,"time":"2025-05-23T04:17:13.710Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:18.721Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getElements"}
+{"level":30,"time":"2025-05-23T04:17:18.721Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2025-05-23T04:17:18.721Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is disabled, return Locator: div.article-preview in page."}
+{"level":30,"time":"2025-05-23T04:17:18.730Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Found 3 elements."}
+{"level":30,"time":"2025-05-23T04:17:18.731Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getElements"}
+{"level":30,"time":"2025-05-23T04:17:18.737Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:18.737Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with div.article-preview >> nth=0 in page."}
+{"level":30,"time":"2025-05-23T04:17:18.783Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:23.796Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:23.797Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=button.btn.btn-sm >> text=Edit Article >> nth=0 in page."}
+{"level":30,"time":"2025-05-23T04:17:23.845Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:23.852Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method clearText"}
+{"level":30,"time":"2025-05-23T04:17:23.852Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with textarea[name='body'] in page."}
+{"level":30,"time":"2025-05-23T04:17:23.864Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method clearText"}
+{"level":30,"time":"2025-05-23T04:17:23.867Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-23T04:17:23.867Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with textarea[name='body'] in page."}
+{"level":30,"time":"2025-05-23T04:17:24.268Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-23T04:17:24.276Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:24.277Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Update Article\") in page."}
+{"level":30,"time":"2025-05-23T04:17:24.286Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:24.293Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:24.293Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Update Article\") in page."}
+{"level":30,"time":"2025-05-23T04:17:24.352Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:29.361Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:29.361Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:17:29.366Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:29.372Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:29.372Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:17:29.414Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:29.427Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:29.427Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Global Feed\") in page."}
+{"level":30,"time":"2025-05-23T04:17:29.477Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:34.485Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getElements"}
+{"level":30,"time":"2025-05-23T04:17:34.485Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is disabled, return Locator: div.article-preview in page."}
+{"level":30,"time":"2025-05-23T04:17:34.485Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2025-05-23T04:17:34.493Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Found 3 elements."}
+{"level":30,"time":"2025-05-23T04:17:34.494Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getElements"}
+{"level":30,"time":"2025-05-23T04:17:34.500Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:34.500Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with div.article-preview >> nth=0 in page."}
+{"level":30,"time":"2025-05-23T04:17:34.546Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:39.555Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:39.556Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-content p in page."}
+{"level":30,"time":"2025-05-23T04:17:39.561Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:39.567Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:39.567Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=div.article-content p in page."}
+{"level":30,"time":"2025-05-23T04:17:39.586Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Retrieved text for element css=div.article-content p containing UpdatedtestingRobotFrameworkScripts"}
+{"level":30,"time":"2025-05-23T04:17:39.587Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-23T04:17:39.595Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:39.597Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:39.601Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:39.604Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:39.609Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:39.609Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:17:39.614Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-23T04:17:39.618Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:39.618Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with text=Home in page."}
+{"level":30,"time":"2025-05-23T04:17:39.644Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:39.651Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:39.651Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with button:has-text(\"Global Feed\") in page."}
+{"level":30,"time":"2025-05-23T04:17:39.710Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:44.722Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getElements"}
+{"level":30,"time":"2025-05-23T04:17:44.722Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is disabled, return Locator: div.article-preview in page."}
+{"level":30,"time":"2025-05-23T04:17:44.722Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2025-05-23T04:17:44.728Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Found 3 elements."}
+{"level":30,"time":"2025-05-23T04:17:44.729Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getElements"}
+{"level":30,"time":"2025-05-23T04:17:44.733Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:44.733Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with div.article-preview >> nth=0 in page."}
+{"level":30,"time":"2025-05-23T04:17:44.762Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:49.772Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method waitForAlerts"}
+{"level":30,"time":"2025-05-23T04:17:49.772Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Waiting for alert with action: accept, promptInput: \"\" and timeout: 10000"}
+{"level":30,"time":"2025-05-23T04:17:49.774Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-23T04:17:49.774Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Strict mode is enabled, find Locator with css=button.btn.btn-sm >> text=Delete Article >> nth=0 in page."}
+{"level":30,"time":"2025-05-23T04:17:49.804Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method waitForAlerts"}
+{"level":30,"time":"2025-05-23T04:17:49.820Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method click"}
+{"level":30,"time":"2025-05-23T04:17:51.832Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.834Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.843Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.846Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.849Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.851Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.854Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.857Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.860Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.862Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-23T04:17:51.864Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active context"}
+{"level":30,"time":"2025-05-23T04:17:51.865Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changing current active page: page=757b451f-95c8-49ee-b0e8-4e384d92a0af"}
+{"level":30,"time":"2025-05-23T04:17:51.865Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Changed active page"}
+{"level":30,"time":"2025-05-23T04:17:51.871Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-05-23T04:17:51.889Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Removed page=ad26f68f-d2f9-4ca3-b92f-b3eba95668a8 from context=5bf12904-2746-4ac9-a354-86cf999ca781 page stack"}
+{"level":30,"time":"2025-05-23T04:17:51.917Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-05-23T04:17:53.074Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-05-23T04:17:53.836Z","pid":33936,"hostname":"KOR-C-0136Q","msg":"End of node method closeAllBrowsers"}

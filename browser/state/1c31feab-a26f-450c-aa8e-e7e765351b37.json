@@ -1,0 +1,14 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://conduit-realworld-example-app.fly.dev",
+      "localStorage": [
+        {
+          "name": "loggedUser",
+          "value": "{\"headers\":{\"Authorization\":\"Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJvYm90VGVzdEF1dG9tYXRpb25AZ21haWwuY29tIiwiaWF0IjoxNzQ3OTczNzU1fQ.vfSC_fuOJpKzTqEjl9NuV-nNp9EAYdTctxgutI69V2A\"},\"isAuth\":true,\"loggedUser\":{\"email\":\"RobotTestAutomation@gmail.com\",\"username\":\"RobotTestAutomation\",\"bio\":null,\"image\":null,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJvYm90VGVzdEF1dG9tYXRpb25AZ21haWwuY29tIiwiaWF0IjoxNzQ3OTczNzU1fQ.vfSC_fuOJpKzTqEjl9NuV-nNp9EAYdTctxgutI69V2A\"}}"
+        }
+      ]
+    }
+  ]
+}

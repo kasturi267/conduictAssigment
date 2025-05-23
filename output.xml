@@ -1,0 +1,1939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.11.3 on win32)" generated="2025-05-23T09:45:39.201524" rpa="false" schemaversion="5">
+<suite id="s1" name="Testscripts" source="C:\Users\PTQ1KOR\conduit-pom-project\testscripts">
+<suite id="s1-s1" name="Tests" source="C:\Users\PTQ1KOR\conduit-pom-project\testscripts\tests">
+<suite id="s1-s1-s1" name="conduitCreatefunction" source="C:\Users\PTQ1KOR\conduit-pom-project\testscripts\tests\conduitCreatefunction.robot">
+<kw name="Login And Open Browser With Storage State" owner="loginResource" type="SETUP">
+<kw name="Login And Save Storage State" owner="loginResource">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-05-23T09:45:40.687330" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\traces\\temp\\aac2ab51-4c15-45da-a872-b3cd840c6b52"}</msg>
+<msg time="2025-05-23T09:45:41.545488" level="INFO">Starting Browser process C:\Users\PTQ1KOR\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51661</msg>
+<msg time="2025-05-23T09:45:51.203943" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\traces\\temp\\aac2ab51-4c15-45da-a872-b3cd840c6b52"}</msg>
+<arg>${browser}</arg>
+<arg>headless=true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-05-23T09:45:40.684297" elapsed="10.520574"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-05-23T09:45:51.210881" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-05-23T09:45:51.228121" level="INFO">Successfully created context. </msg>
+<msg time="2025-05-23T09:45:51.228121" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-05-23T09:45:51.205869" elapsed="0.022252"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-23T09:45:55.520430" level="INFO">Successfully initialized new page object and opened url: https://conduit-realworld-example-app.fly.dev/</msg>
+<arg>${baseUrl}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-23T09:45:51.229121" elapsed="4.291309"/>
+</kw>
+<kw name="Click Login" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:45:55.581439" level="INFO">Waited for Element with selector text=Login at state visible</msg>
+<arg>${loginButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:45:55.521538" elapsed="0.059901"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:45:55.584137" level="INFO">Clicks the element 'text=Login'.</msg>
+<arg>${loginButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:45:55.582441" elapsed="0.073996"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:45:55.520430" elapsed="0.136007"/>
+</kw>
+<kw name="Enter Email and Password" owner="loginResource">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:45:55.658432" level="INFO">Types the text 'RobotTestAutomation@gmail.com' in the given field.</msg>
+<arg>${emailInputField}</arg>
+<arg>${EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:45:55.657431" elapsed="0.219698"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:45:55.879396" level="INFO">Types the text 'RobotTestAutomation' in the given field.</msg>
+<arg>${passwordInputField}</arg>
+<arg>${PWD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:45:55.877129" elapsed="0.145797"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:45:55.656437" elapsed="0.366489"/>
+</kw>
+<kw name="Click LoginBtn" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:45:56.040988" level="INFO">Waited for Element with selector xpath=//button[text()="Login"] at state visible</msg>
+<arg>${loginButtonInSiginPopup}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.024434" elapsed="0.016554"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:45:56.042987" level="INFO">Clicks the element 'xpath=//button[text()="Login"]'.</msg>
+<arg>${loginButtonInSiginPopup}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.041988" elapsed="0.046297"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:45:56.022926" elapsed="0.065359"/>
+</kw>
+<kw name="Verify Successful Login" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:45:56.429914" level="INFO">Waited for Element with selector css=div.nav-link.dropdown-toggle.cursor-pointer at state visible</msg>
+<arg>${successMessage}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.090284" elapsed="0.339630"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:45:56.472750" level="INFO">Text: 'RobotTestAutomation'</msg>
+<msg time="2025-05-23T09:45:56.473750" level="INFO">${actual} = RobotTestAutomation</msg>
+<var>${actual}</var>
+<arg>${successMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.429914" elapsed="0.043836"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual}</arg>
+<arg>${USERNAME_TEXT}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.473750" elapsed="0.000511"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:45:56.089283" elapsed="0.384978"/>
+</kw>
+<kw name="Save Storage State" owner="Browser">
+<msg time="2025-05-23T09:45:56.507884" level="INFO">Current context state is saved to: C:\Users\PTQ1KOR\conduit-pom-project\browser\state\1c31feab-a26f-450c-aa8e-e7e765351b37.json</msg>
+<msg time="2025-05-23T09:45:56.507884" level="INFO">${storage_state_path} = C:\Users\PTQ1KOR\conduit-pom-project\browser\state\1c31feab-a26f-450c-aa8e-e7e765351b37.json</msg>
+<var>${storage_state_path}</var>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Saves the current active context storage state to a file.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.475273" elapsed="0.032611"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:45:56.508885" level="INFO">Storage saved at: C:\Users\PTQ1KOR\conduit-pom-project\browser\state\1c31feab-a26f-450c-aa8e-e7e765351b37.json</msg>
+<arg>Storage saved at: ${storage_state_path}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.507884" elapsed="0.001001"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-05-23T09:45:56.843794" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.508885" elapsed="0.334909"/>
+</kw>
+<return>
+<value>${storage_state_path}</value>
+<status status="PASS" start="2025-05-23T09:45:56.844802" elapsed="0.000000"/>
+</return>
+<msg time="2025-05-23T09:45:56.844802" level="INFO">${state_file} = C:\Users\PTQ1KOR\conduit-pom-project\browser\state\1c31feab-a26f-450c-aa8e-e7e765351b37.json</msg>
+<var>${state_file}</var>
+<status status="PASS" start="2025-05-23T09:45:40.681785" elapsed="16.163017"/>
+</kw>
+<kw name="Open Browser With Storage State" owner="loginResource">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-05-23T09:45:56.846811" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\traces\\temp\\b48ada71-abd1-4d55-96a8-d3c4980b3139"}</msg>
+<msg time="2025-05-23T09:46:06.367616" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\traces\\temp\\b48ada71-abd1-4d55-96a8-d3c4980b3139"}</msg>
+<arg>${browser}</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-05-23T09:45:56.845802" elapsed="9.521814"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-23T09:46:06.370615" level="INFO">${context_options} = {'storageState': 'C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\state\\1c31feab-a26f-450c-aa8e-e7e765351b37.json'}</msg>
+<var>${context_options}</var>
+<arg>storageState=${state_file}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-23T09:46:06.368617" elapsed="0.001998"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-05-23T09:46:06.383763" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "storageState": "C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\state\\1c31feab-a26f-450c-aa8e-e7e765351b37.json",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-05-23T09:46:10.731842" level="INFO">Successfully created context. </msg>
+<msg time="2025-05-23T09:46:10.731842" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': 'C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\state\\1c31feab-a26f-450c-aa8e-e7e765351b37.json', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<arg>&amp;{context_options}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-05-23T09:46:06.371615" elapsed="4.360227"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-23T09:46:12.700583" level="INFO">Successfully initialized new page object and opened url: https://conduit-realworld-example-app.fly.dev/</msg>
+<arg>${baseUrl}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-23T09:46:10.731842" elapsed="1.969740"/>
+</kw>
+<arg>${state_file}</arg>
+<status status="PASS" start="2025-05-23T09:45:56.844802" elapsed="15.856780"/>
+</kw>
+<kw name="Verify Successful Login" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:12.846988" level="INFO">Waited for Element with selector css=div.nav-link.dropdown-toggle.cursor-pointer at state visible</msg>
+<arg>${successMessage}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:12.704682" elapsed="0.142306"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:12.942286" level="INFO">Text: 'RobotTestAutomation'</msg>
+<msg time="2025-05-23T09:46:12.942286" level="INFO">${actual} = RobotTestAutomation</msg>
+<var>${actual}</var>
+<arg>${successMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:12.847987" elapsed="0.094299"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual}</arg>
+<arg>${USERNAME_TEXT}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-05-23T09:46:12.943862" elapsed="0.002951"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:12.702595" elapsed="0.244218"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:45:40.678786" elapsed="32.269023"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Create a New Article with" line="15">
+<msg time="2025-05-23T09:46:12.967426" level="INFO">${DataDriver_TEST_DATA} = {'test_case_name': 'Create a New Article with', 'arguments': {'${articleTitle}': 'RobotFramework2', '${about}': 'SampleRobotframework2', '${articleDescription}': 'testingRobotFrameworkScripts2', '${ar...</msg>
+<kw name="Create New Article">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:12.979966" level="INFO">Title: RobotFramework</msg>
+<arg>Title: ${articleTitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:12.977960" elapsed="0.002006"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:12.982962" level="INFO">About: SampleRobotframework</msg>
+<arg>About: ${about}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:12.979966" elapsed="0.002996"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:12.984481" level="INFO">Description: testingRobotFrameworkScripts</msg>
+<arg>Description: ${articleDescription}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:12.982962" elapsed="0.001519"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:12.986522" level="INFO">Tags: RobotFramework</msg>
+<arg>Tags: ${articleTags}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:12.985498" elapsed="0.001024"/>
+</kw>
+<kw name="Click New Article" owner="articleResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:13.015092" level="INFO">Waited for Element with selector text=New Article at state visible</msg>
+<arg>${newArticle}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:12.988496" elapsed="0.026596"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:13.018110" level="INFO">Clicks the element 'text=New Article'.</msg>
+<arg>${newArticle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:13.015092" elapsed="0.120566"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:12.986522" elapsed="0.150153"/>
+</kw>
+<kw name="Enters Article details with &quot;${articleTitle}&quot;, &quot;${about}&quot;, &quot;${articleDescription}&quot;, &quot;${articleTags}&quot;" owner="articleResource" source_name="Enters Article details with &quot;${articleTitle}&quot;, &quot;${about}&quot;, &quot;${articleDescription}&quot;, &quot;${articleTags}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:13.170877" level="INFO">Waited for Element with selector input[placeholder='Article Title'] at state visible</msg>
+<arg>${articleTitleField}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:13.140678" elapsed="0.031213"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:13.175410" level="INFO">Types the text 'RobotFramework' in the given field.</msg>
+<arg>${articleTitleField}</arg>
+<arg>${articleTitle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:13.171891" elapsed="0.397852"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:13.575305" level="INFO">Types the text 'SampleRobotframework' in the given field.</msg>
+<arg>${aboutField}</arg>
+<arg>${about}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:13.570736" elapsed="0.438631"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:14.015888" level="INFO">Types the text 'testingRobotFrameworkScripts' in the given field.</msg>
+<arg>${textAreaField}</arg>
+<arg>${articleDescription}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:14.011367" elapsed="0.472250"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:14.490558" level="INFO">Types the text 'RobotFramework' in the given field.</msg>
+<arg>${tags}</arg>
+<arg>${articleTags}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:14.485568" elapsed="0.329329"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:13.137698" elapsed="1.678196"/>
+</kw>
+<kw name="Click Publish Article" owner="articleResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:14.840962" level="INFO">Waited for Element with selector button:has-text("Publish Article") at state visible</msg>
+<arg>${publishArticleButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:14.818891" elapsed="0.022071"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:14.843962" level="INFO">Clicks the element 'button:has-text("Publish Article")'.</msg>
+<arg>${publishArticleButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:14.840962" elapsed="0.071074"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:46:19.914946" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:46:14.912036" elapsed="5.002910"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:14.816895" elapsed="5.098561"/>
+</kw>
+<kw name="Validate Article Title &quot;${articleTitle}&quot;" owner="articleResource" source_name="Validate Article Title &quot;${articleTitle}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:19.933580" level="INFO">Waited for Element with selector css=div.article-page h1 at state visible</msg>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.918470" elapsed="0.015110"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:19.959062" level="INFO">Text: 'RobotFramework'</msg>
+<msg time="2025-05-23T09:46:19.959062" level="INFO">${textTitle} = RobotFramework</msg>
+<var>${textTitle}</var>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.934589" elapsed="0.025480"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${textTitle}</arg>
+<arg>${articleTitle}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.960069" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:19.915456" elapsed="0.046616"/>
+</kw>
+<arg>articleTitle=RobotFramework</arg>
+<arg>about=SampleRobotframework</arg>
+<arg>articleDescription=testingRobotFrameworkScripts</arg>
+<arg>articleTags=RobotFramework</arg>
+<status status="PASS" start="2025-05-23T09:46:12.968429" elapsed="6.993643"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:12.947809" elapsed="7.014263"/>
+</test>
+<test id="s1-s1-s1-t2" name="Create a New Article with" line="15">
+<msg time="2025-05-23T09:46:19.974859" level="INFO">${DataDriver_TEST_DATA} = {'test_case_name': 'Create a New Article with', 'arguments': {'${articleTitle}': 'RobotFramework2', '${about}': 'SampleRobotframework2', '${articleDescription}': 'testingRobotFrameworkScripts2', '${ar...</msg>
+<kw name="Create New Article">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:19.975866" level="INFO">Title: RobotFramework1</msg>
+<arg>Title: ${articleTitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.975866" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:19.976875" level="INFO">About: SampleRobotframework1</msg>
+<arg>About: ${about}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.976875" elapsed="0.000507"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:19.977888" level="INFO">Description: testingRobotFrameworkScripts1</msg>
+<arg>Description: ${articleDescription}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.977382" elapsed="0.000506"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:19.977888" level="INFO">Tags: RobotFramework</msg>
+<arg>Tags: ${articleTags}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.977888" elapsed="0.001008"/>
+</kw>
+<kw name="Click New Article" owner="articleResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:19.984007" level="INFO">Waited for Element with selector text=New Article at state visible</msg>
+<arg>${newArticle}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.979403" elapsed="0.004604"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:19.985455" level="INFO">Clicks the element 'text=New Article'.</msg>
+<arg>${newArticle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:19.984007" elapsed="0.054132"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:19.978896" elapsed="0.059243"/>
+</kw>
+<kw name="Enters Article details with &quot;${articleTitle}&quot;, &quot;${about}&quot;, &quot;${articleDescription}&quot;, &quot;${articleTags}&quot;" owner="articleResource" source_name="Enters Article details with &quot;${articleTitle}&quot;, &quot;${about}&quot;, &quot;${articleDescription}&quot;, &quot;${articleTags}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:20.047673" level="INFO">Waited for Element with selector input[placeholder='Article Title'] at state visible</msg>
+<arg>${articleTitleField}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:20.039141" elapsed="0.008532"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:20.048674" level="INFO">Types the text 'RobotFramework1' in the given field.</msg>
+<arg>${articleTitleField}</arg>
+<arg>${articleTitle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:20.047673" elapsed="0.305869"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:20.358555" level="INFO">Types the text 'SampleRobotframework1' in the given field.</msg>
+<arg>${aboutField}</arg>
+<arg>${about}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:20.353542" elapsed="0.334122"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:20.691663" level="INFO">Types the text 'testingRobotFrameworkScripts1' in the given field.</msg>
+<arg>${textAreaField}</arg>
+<arg>${articleDescription}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:20.688651" elapsed="0.336145"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:21.028802" level="INFO">Types the text 'RobotFramework' in the given field.</msg>
+<arg>${tags}</arg>
+<arg>${articleTags}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:21.025802" elapsed="0.235181"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:20.039141" elapsed="1.222830"/>
+</kw>
+<kw name="Click Publish Article" owner="articleResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:21.284233" level="INFO">Waited for Element with selector button:has-text("Publish Article") at state visible</msg>
+<arg>${publishArticleButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:21.264499" elapsed="0.019734"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:21.286253" level="INFO">Clicks the element 'button:has-text("Publish Article")'.</msg>
+<arg>${publishArticleButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:21.285274" elapsed="0.078445"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:46:26.366119" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:46:21.363719" elapsed="5.002400"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:21.261971" elapsed="5.104148"/>
+</kw>
+<kw name="Validate Article Title &quot;${articleTitle}&quot;" owner="articleResource" source_name="Validate Article Title &quot;${articleTitle}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:26.377246" level="INFO">Waited for Element with selector css=div.article-page h1 at state visible</msg>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.367831" elapsed="0.009415"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:26.402672" level="INFO">Text: 'RobotFramework1'</msg>
+<msg time="2025-05-23T09:46:26.402672" level="INFO">${textTitle} = RobotFramework1</msg>
+<var>${textTitle}</var>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.378255" elapsed="0.024417"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${textTitle}</arg>
+<arg>${articleTitle}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.402672" elapsed="0.001617"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:26.366727" elapsed="0.037562"/>
+</kw>
+<arg>articleTitle=RobotFramework1</arg>
+<arg>about=SampleRobotframework1</arg>
+<arg>articleDescription=testingRobotFrameworkScripts1</arg>
+<arg>articleTags=RobotFramework</arg>
+<status status="PASS" start="2025-05-23T09:46:19.974859" elapsed="6.429430"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:19.970101" elapsed="6.434188"/>
+</test>
+<test id="s1-s1-s1-t3" name="Create a New Article with" line="15">
+<msg time="2025-05-23T09:46:26.418226" level="INFO">${DataDriver_TEST_DATA} = {'test_case_name': 'Create a New Article with', 'arguments': {'${articleTitle}': 'RobotFramework2', '${about}': 'SampleRobotframework2', '${articleDescription}': 'testingRobotFrameworkScripts2', '${ar...</msg>
+<kw name="Create New Article">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:26.419224" level="INFO">Title: RobotFramework2</msg>
+<arg>Title: ${articleTitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.419224" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:26.420225" level="INFO">About: SampleRobotframework2</msg>
+<arg>About: ${about}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.419224" elapsed="0.001001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:26.420225" level="INFO">Description: testingRobotFrameworkScripts2</msg>
+<arg>Description: ${articleDescription}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.420225" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:26.421225" level="INFO">Tags: RobotFramework</msg>
+<arg>Tags: ${articleTags}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.420225" elapsed="0.001000"/>
+</kw>
+<kw name="Click New Article" owner="articleResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:26.428922" level="INFO">Waited for Element with selector text=New Article at state visible</msg>
+<arg>${newArticle}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.421225" elapsed="0.007697"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:26.430277" level="INFO">Clicks the element 'text=New Article'.</msg>
+<arg>${newArticle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.428922" elapsed="0.045130"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:26.421225" elapsed="0.052827"/>
+</kw>
+<kw name="Enters Article details with &quot;${articleTitle}&quot;, &quot;${about}&quot;, &quot;${articleDescription}&quot;, &quot;${articleTags}&quot;" owner="articleResource" source_name="Enters Article details with &quot;${articleTitle}&quot;, &quot;${about}&quot;, &quot;${articleDescription}&quot;, &quot;${articleTags}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:26.486677" level="INFO">Waited for Element with selector input[placeholder='Article Title'] at state visible</msg>
+<arg>${articleTitleField}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.476034" elapsed="0.010643"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:26.488668" level="INFO">Types the text 'RobotFramework2' in the given field.</msg>
+<arg>${articleTitleField}</arg>
+<arg>${articleTitle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.487672" elapsed="0.274478"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:26.764765" level="INFO">Types the text 'SampleRobotframework2' in the given field.</msg>
+<arg>${aboutField}</arg>
+<arg>${about}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:26.763714" elapsed="0.401732"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:27.170464" level="INFO">Types the text 'testingRobotFrameworkScripts2' in the given field.</msg>
+<arg>${textAreaField}</arg>
+<arg>${articleDescription}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:27.166463" elapsed="0.325057"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:27.494577" level="INFO">Types the text 'RobotFramework' in the given field.</msg>
+<arg>${tags}</arg>
+<arg>${articleTags}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:27.492520" elapsed="0.193045"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:26.474982" elapsed="1.210583"/>
+</kw>
+<kw name="Click Publish Article" owner="articleResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:27.702128" level="INFO">Waited for Element with selector button:has-text("Publish Article") at state visible</msg>
+<arg>${publishArticleButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:27.687565" elapsed="0.014563"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:27.705666" level="INFO">Clicks the element 'button:has-text("Publish Article")'.</msg>
+<arg>${publishArticleButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:27.703645" elapsed="0.049954"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:46:32.755809" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:46:27.754111" elapsed="5.001698"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:27.685565" elapsed="5.070244"/>
+</kw>
+<kw name="Validate Article Title &quot;${articleTitle}&quot;" owner="articleResource" source_name="Validate Article Title &quot;${articleTitle}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:32.768089" level="INFO">Waited for Element with selector css=div.article-page h1 at state visible</msg>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:32.757443" elapsed="0.011634"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:32.798624" level="INFO">Text: 'RobotFramework2'</msg>
+<msg time="2025-05-23T09:46:32.798624" level="INFO">${textTitle} = RobotFramework2</msg>
+<var>${textTitle}</var>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:32.769077" elapsed="0.029547"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${textTitle}</arg>
+<arg>${articleTitle}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:46:32.798624" elapsed="0.002001"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:32.756381" elapsed="0.044244"/>
+</kw>
+<arg>articleTitle=RobotFramework2</arg>
+<arg>about=SampleRobotframework2</arg>
+<arg>articleDescription=testingRobotFrameworkScripts2</arg>
+<arg>articleTags=RobotFramework</arg>
+<status status="PASS" start="2025-05-23T09:46:26.418226" elapsed="6.382399"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:26.413998" elapsed="6.387635"/>
+</test>
+<status status="PASS" start="2025-05-23T09:45:39.279761" elapsed="53.534109"/>
+</suite>
+<suite id="s1-s1-s2" name="Conduitupdatedelete" source="C:\Users\PTQ1KOR\conduit-pom-project\testscripts\tests\conduitupdatedelete.robot">
+<kw name="Login And Open Browser With Storage State" owner="loginResource" type="SETUP">
+<kw name="Login And Save Storage State" owner="loginResource">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-05-23T09:46:32.999276" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\traces\\temp\\ccebdf7a-df51-4f31-aace-a2e81f3b147f"}</msg>
+<msg time="2025-05-23T09:46:34.981979" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\traces\\temp\\ccebdf7a-df51-4f31-aace-a2e81f3b147f"}</msg>
+<arg>${browser}</arg>
+<arg>headless=true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-05-23T09:46:32.997277" elapsed="1.984702"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-05-23T09:46:34.985445" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-05-23T09:46:34.992927" level="INFO">Successfully created context. </msg>
+<msg time="2025-05-23T09:46:34.992927" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-05-23T09:46:34.983075" elapsed="0.009852"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-23T09:46:38.219151" level="INFO">Successfully initialized new page object and opened url: https://conduit-realworld-example-app.fly.dev/</msg>
+<arg>${baseUrl}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-23T09:46:34.992927" elapsed="3.226224"/>
+</kw>
+<kw name="Click Login" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:38.290204" level="INFO">Waited for Element with selector text=Login at state visible</msg>
+<arg>${loginButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:38.220163" elapsed="0.070041"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:38.291200" level="INFO">Clicks the element 'text=Login'.</msg>
+<arg>${loginButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:38.290204" elapsed="0.050398"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:38.219151" elapsed="0.122456"/>
+</kw>
+<kw name="Enter Email and Password" owner="loginResource">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:38.345172" level="INFO">Types the text 'RobotTestAutomation@gmail.com' in the given field.</msg>
+<arg>${emailInputField}</arg>
+<arg>${EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:38.343610" elapsed="0.174896"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:46:38.520498" level="INFO">Types the text 'RobotTestAutomation' in the given field.</msg>
+<arg>${passwordInputField}</arg>
+<arg>${PWD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:38.518506" elapsed="0.115842"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:38.342610" elapsed="0.291738"/>
+</kw>
+<kw name="Click LoginBtn" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:38.645011" level="INFO">Waited for Element with selector xpath=//button[text()="Login"] at state visible</msg>
+<arg>${loginButtonInSiginPopup}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:38.635395" elapsed="0.009616"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:38.647049" level="INFO">Clicks the element 'xpath=//button[text()="Login"]'.</msg>
+<arg>${loginButtonInSiginPopup}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:38.645011" elapsed="0.058676"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:38.634348" elapsed="0.069481"/>
+</kw>
+<kw name="Verify Successful Login" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:39.051718" level="INFO">Waited for Element with selector css=div.nav-link.dropdown-toggle.cursor-pointer at state visible</msg>
+<arg>${successMessage}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:38.704834" elapsed="0.346884"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:39.089394" level="INFO">Text: 'RobotTestAutomation'</msg>
+<msg time="2025-05-23T09:46:39.089394" level="INFO">${actual} = RobotTestAutomation</msg>
+<var>${actual}</var>
+<arg>${successMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:39.051718" elapsed="0.037676"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual}</arg>
+<arg>${USERNAME_TEXT}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-05-23T09:46:39.090395" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:38.703829" elapsed="0.386566"/>
+</kw>
+<kw name="Save Storage State" owner="Browser">
+<msg time="2025-05-23T09:46:39.103533" level="INFO">Current context state is saved to: C:\Users\PTQ1KOR\conduit-pom-project\browser\state\c8d64d45-eb85-427a-9ec8-6499c9b06127.json</msg>
+<msg time="2025-05-23T09:46:39.103533" level="INFO">${storage_state_path} = C:\Users\PTQ1KOR\conduit-pom-project\browser\state\c8d64d45-eb85-427a-9ec8-6499c9b06127.json</msg>
+<var>${storage_state_path}</var>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Saves the current active context storage state to a file.</doc>
+<status status="PASS" start="2025-05-23T09:46:39.090395" elapsed="0.013138"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-23T09:46:39.104593" level="INFO">Storage saved at: C:\Users\PTQ1KOR\conduit-pom-project\browser\state\c8d64d45-eb85-427a-9ec8-6499c9b06127.json</msg>
+<arg>Storage saved at: ${storage_state_path}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-23T09:46:39.103533" elapsed="0.001060"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-05-23T09:46:39.373519" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-23T09:46:39.104593" elapsed="0.270000"/>
+</kw>
+<return>
+<value>${storage_state_path}</value>
+<status status="PASS" start="2025-05-23T09:46:39.374593" elapsed="0.000000"/>
+</return>
+<msg time="2025-05-23T09:46:39.375594" level="INFO">${state_file} = C:\Users\PTQ1KOR\conduit-pom-project\browser\state\c8d64d45-eb85-427a-9ec8-6499c9b06127.json</msg>
+<var>${state_file}</var>
+<status status="PASS" start="2025-05-23T09:46:32.996277" elapsed="6.379317"/>
+</kw>
+<kw name="Open Browser With Storage State" owner="loginResource">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-05-23T09:46:39.377539" level="INFO">Switching browser to browser=6fa79520-53d3-4a79-8094-95c9e87e3ce9</msg>
+<msg time="2025-05-23T09:46:39.379547" level="INFO">Successfully changed active browser: browser=6fa79520-53d3-4a79-8094-95c9e87e3ce9</msg>
+<msg time="2025-05-23T09:46:39.379547" level="INFO">Reusing existing browser with id: browser=6fa79520-53d3-4a79-8094-95c9e87e3ce9</msg>
+<arg>${browser}</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-05-23T09:46:39.376597" elapsed="0.002950"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-23T09:46:39.380602" level="INFO">${context_options} = {'storageState': 'C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\state\\c8d64d45-eb85-427a-9ec8-6499c9b06127.json'}</msg>
+<var>${context_options}</var>
+<arg>storageState=${state_file}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-23T09:46:39.379547" elapsed="0.001055"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-05-23T09:46:39.384176" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "storageState": "C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\state\\c8d64d45-eb85-427a-9ec8-6499c9b06127.json",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-05-23T09:46:40.184303" level="INFO">Successfully created context. </msg>
+<msg time="2025-05-23T09:46:40.184303" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': 'C:\\Users\\PTQ1KOR\\conduit-pom-project\\browser\\state\\c8d64d45-eb85-427a-9ec8-6499c9b06127.json', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<arg>&amp;{context_options}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-05-23T09:46:39.380602" elapsed="0.804748"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-23T09:46:42.366598" level="INFO">Successfully initialized new page object and opened url: https://conduit-realworld-example-app.fly.dev/</msg>
+<arg>${baseUrl}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-23T09:46:40.185350" elapsed="2.182247"/>
+</kw>
+<arg>${state_file}</arg>
+<status status="PASS" start="2025-05-23T09:46:39.375594" elapsed="2.992003"/>
+</kw>
+<kw name="Verify Successful Login" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:42.496556" level="INFO">Waited for Element with selector css=div.nav-link.dropdown-toggle.cursor-pointer at state visible</msg>
+<arg>${successMessage}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.376201" elapsed="0.120355"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:42.580527" level="INFO">Text: 'RobotTestAutomation'</msg>
+<msg time="2025-05-23T09:46:42.580527" level="INFO">${actual} = RobotTestAutomation</msg>
+<var>${actual}</var>
+<arg>${successMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.496556" elapsed="0.083971"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual}</arg>
+<arg>${USERNAME_TEXT}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.580527" elapsed="0.001015"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:42.367597" elapsed="0.213945"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:32.995210" elapsed="9.586332"/>
+</kw>
+<test id="s1-s1-s2-t1" name="View Multiple Articles" line="11">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-23T09:46:42.588118" level="INFO">${article0} = {'title': 'RobotFramework2', 'paragraph': 'testingRobotFrameworkScripts2', 'tag': 'RobotFramework'}</msg>
+<var>${article0}</var>
+<arg>title=RobotFramework2</arg>
+<arg>paragraph=testingRobotFrameworkScripts2</arg>
+<arg>tag=RobotFramework</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.587122" elapsed="0.000996"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-23T09:46:42.590127" level="INFO">${article1} = {'title': 'RobotFramework1', 'paragraph': 'testingRobotFrameworkScripts1', 'tag': 'RobotFramework'}</msg>
+<var>${article1}</var>
+<arg>title=RobotFramework1</arg>
+<arg>paragraph=testingRobotFrameworkScripts1</arg>
+<arg>tag=RobotFramework</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.589118" elapsed="0.001009"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-05-23T09:46:42.593600" level="INFO">${article2} = {'title': 'RobotFramework', 'paragraph': 'testingRobotFrameworkScripts', 'tag': 'RobotFramework'}</msg>
+<var>${article2}</var>
+<arg>title=RobotFramework</arg>
+<arg>paragraph=testingRobotFrameworkScripts</arg>
+<arg>tag=RobotFramework</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.592615" elapsed="0.000985"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-05-23T09:46:42.595218" level="INFO">@{ARTICLES} = [ {'title': 'RobotFramework2', 'paragraph': 'testingRobotFrameworkScripts2', 'tag': 'RobotFramework'} | {'title': 'RobotFramework1', 'paragraph': 'testingRobotFrameworkScripts1', 'tag': 'RobotFramewor...</msg>
+<var>@{ARTICLES}</var>
+<arg>${article0}</arg>
+<arg>${article1}</arg>
+<arg>${article2}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.594159" elapsed="0.001059"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-05-23T09:46:42.596221" level="INFO">Length is 3.</msg>
+<msg time="2025-05-23T09:46:42.596221" level="INFO">${article_count} = 3</msg>
+<var>${article_count}</var>
+<arg>${ARTICLES}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.596221" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click Home" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:42.610233" level="INFO">Waited for Element with selector text=Home at state visible</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.599208" elapsed="0.012426"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:42.612752" level="INFO">Clicks the element 'text=Home'.</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.611634" elapsed="0.140005"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:42.598209" elapsed="0.153430"/>
+</kw>
+<kw name="Click Global Feed Button" owner="articleResource">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:42.755237" level="INFO">Clicks the element 'button:has-text("Global Feed")'.</msg>
+<arg>${globalFeedButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.753631" elapsed="0.143268"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:46:47.898292" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:46:42.896899" elapsed="5.001393"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:42.751639" elapsed="5.146653"/>
+</kw>
+<kw name="Click Active Preview" owner="articleResource">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-05-23T09:46:47.917653" level="INFO">Found locator('div.article-preview').first(),locator('div.article-preview').nth(1),locator('div.article-preview').nth(2) Locators successfully.</msg>
+<msg time="2025-05-23T09:46:47.918654" level="INFO">${articlePreviewIndex} = ['div.article-preview &gt;&gt; nth=0', 'div.article-preview &gt;&gt; nth=1', 'div.article-preview &gt;&gt; nth=2']</msg>
+<var>${articlePreviewIndex}</var>
+<arg>${articlePreview}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:47.902493" elapsed="0.016161"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:47.920658" level="INFO">Clicks the element 'div.article-preview &gt;&gt; nth=0'.</msg>
+<arg>${articlePreviewIndex}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:47.918654" elapsed="0.073396"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:46:52.993859" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:46:47.992050" elapsed="5.001809"/>
+</kw>
+<arg>${i}</arg>
+<status status="PASS" start="2025-05-23T09:46:47.898842" elapsed="5.095580"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2025-05-23T09:46:52.995497" level="INFO">${article} = {'title': 'RobotFramework2', 'paragraph': 'testingRobotFrameworkScripts2', 'tag': 'RobotFramework'}</msg>
+<var>${article}</var>
+<arg>${ARTICLES}</arg>
+<arg>${i}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2025-05-23T09:46:52.994422" elapsed="0.001075"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:46:52.997480" level="INFO">${title} = RobotFramework2</msg>
+<var>${title}</var>
+<arg>${article}</arg>
+<arg>title</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:46:52.996484" elapsed="0.000996"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:46:52.998484" level="INFO">${paragraph} = testingRobotFrameworkScripts2</msg>
+<var>${paragraph}</var>
+<arg>${article}</arg>
+<arg>paragraph</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:46:52.997480" elapsed="0.001004"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:46:53.000488" level="INFO">${tag} = RobotFramework</msg>
+<var>${tag}</var>
+<arg>${article}</arg>
+<arg>tag</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:46:52.999485" elapsed="0.001003"/>
+</kw>
+<kw name="Validate Article Data" owner="articleResource">
+<kw name="Validate Article Title &quot;${Title}&quot;" owner="articleResource" source_name="Validate Article Title &quot;${articleTitle}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:53.016810" level="INFO">Waited for Element with selector css=div.article-page h1 at state visible</msg>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.002532" elapsed="0.014278"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:53.046719" level="INFO">Text: 'RobotFramework2'</msg>
+<msg time="2025-05-23T09:46:53.046719" level="INFO">${textTitle} = RobotFramework2</msg>
+<var>${textTitle}</var>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.017810" elapsed="0.028909"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${textTitle}</arg>
+<arg>${articleTitle}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.047717" elapsed="0.001009"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:53.001489" elapsed="0.047237"/>
+</kw>
+<kw name="Validate Paragraph Body &quot;${Paragraph}&quot;" owner="articleResource" source_name="Validate Paragraph Body &quot;${expectedParagraphBody}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:53.058354" level="INFO">Waited for Element with selector css=div.article-content p at state visible</msg>
+<arg>${validateParagraphBody}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.049727" elapsed="0.008627"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:53.075577" level="INFO">Text: 'testingRobotFrameworkScripts2'</msg>
+<msg time="2025-05-23T09:46:53.075577" level="INFO">${bodyText} = testingRobotFrameworkScripts2</msg>
+<var>${bodyText}</var>
+<arg>${validateParagraphBody}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.059363" elapsed="0.016214"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${bodyText}</arg>
+<arg>${expectedParagraphBody}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.075577" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:53.048726" elapsed="0.027851"/>
+</kw>
+<kw name="Validate Tag &quot;${Tag}&quot;" owner="articleResource" source_name="Validate Tag &quot;${expectedTag}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:53.083576" level="INFO">Waited for Element with selector css=ul.tag-list li at state visible</msg>
+<arg>${validateTags}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.077576" elapsed="0.006000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:46:53.097764" level="INFO">Text: 'RobotFramework'</msg>
+<msg time="2025-05-23T09:46:53.097764" level="INFO">${tagText} = RobotFramework</msg>
+<var>${tagText}</var>
+<arg>${validateTags}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.084127" elapsed="0.013637"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${tagText}</arg>
+<arg>${expectedTag}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.097764" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:53.076577" elapsed="0.022183"/>
+</kw>
+<arg>${title}</arg>
+<arg>${paragraph}</arg>
+<arg>${tag}</arg>
+<status status="PASS" start="2025-05-23T09:46:53.000488" elapsed="0.098272"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2025-05-23T09:46:42.597224" elapsed="10.501536"/>
+</iter>
+<iter>
+<kw name="Click Home" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:46:53.104326" level="INFO">Waited for Element with selector text=Home at state visible</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.099762" elapsed="0.004564"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:53.105428" level="INFO">Clicks the element 'text=Home'.</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.105428" elapsed="0.045522"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:53.099762" elapsed="0.051188"/>
+</kw>
+<kw name="Click Global Feed Button" owner="articleResource">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:53.153548" level="INFO">Clicks the element 'button:has-text("Global Feed")'.</msg>
+<arg>${globalFeedButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.151920" elapsed="0.064952"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:46:58.218178" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:46:53.216872" elapsed="5.001306"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:46:53.151920" elapsed="5.066258"/>
+</kw>
+<kw name="Click Active Preview" owner="articleResource">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-05-23T09:46:58.233786" level="INFO">Found locator('div.article-preview').first(),locator('div.article-preview').nth(1),locator('div.article-preview').nth(2) Locators successfully.</msg>
+<msg time="2025-05-23T09:46:58.233786" level="INFO">${articlePreviewIndex} = ['div.article-preview &gt;&gt; nth=0', 'div.article-preview &gt;&gt; nth=1', 'div.article-preview &gt;&gt; nth=2']</msg>
+<var>${articlePreviewIndex}</var>
+<arg>${articlePreview}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:58.219968" elapsed="0.013818"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:46:58.235601" level="INFO">Clicks the element 'div.article-preview &gt;&gt; nth=1'.</msg>
+<arg>${articlePreviewIndex}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:46:58.234451" elapsed="0.051238"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:03.287052" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:46:58.285689" elapsed="5.001363"/>
+</kw>
+<arg>${i}</arg>
+<status status="PASS" start="2025-05-23T09:46:58.218825" elapsed="5.068227"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2025-05-23T09:47:03.290064" level="INFO">${article} = {'title': 'RobotFramework1', 'paragraph': 'testingRobotFrameworkScripts1', 'tag': 'RobotFramework'}</msg>
+<var>${article}</var>
+<arg>${ARTICLES}</arg>
+<arg>${i}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.289063" elapsed="0.001001"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:47:03.291062" level="INFO">${title} = RobotFramework1</msg>
+<var>${title}</var>
+<arg>${article}</arg>
+<arg>title</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.290064" elapsed="0.000998"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:47:03.292062" level="INFO">${paragraph} = testingRobotFrameworkScripts1</msg>
+<var>${paragraph}</var>
+<arg>${article}</arg>
+<arg>paragraph</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.291062" elapsed="0.001000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:47:03.293570" level="INFO">${tag} = RobotFramework</msg>
+<var>${tag}</var>
+<arg>${article}</arg>
+<arg>tag</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.292062" elapsed="0.001508"/>
+</kw>
+<kw name="Validate Article Data" owner="articleResource">
+<kw name="Validate Article Title &quot;${Title}&quot;" owner="articleResource" source_name="Validate Article Title &quot;${articleTitle}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:03.307127" level="INFO">Waited for Element with selector css=div.article-page h1 at state visible</msg>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.295580" elapsed="0.011547"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:47:03.332147" level="INFO">Text: 'RobotFramework1'</msg>
+<msg time="2025-05-23T09:47:03.332147" level="INFO">${textTitle} = RobotFramework1</msg>
+<var>${textTitle}</var>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.307127" elapsed="0.025020"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${textTitle}</arg>
+<arg>${articleTitle}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.333796" elapsed="0.000881"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:03.294579" elapsed="0.040098"/>
+</kw>
+<kw name="Validate Paragraph Body &quot;${Paragraph}&quot;" owner="articleResource" source_name="Validate Paragraph Body &quot;${expectedParagraphBody}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:03.343816" level="INFO">Waited for Element with selector css=div.article-content p at state visible</msg>
+<arg>${validateParagraphBody}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.335676" elapsed="0.009151"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:47:03.359564" level="INFO">Text: 'testingRobotFrameworkScripts1'</msg>
+<msg time="2025-05-23T09:47:03.359564" level="INFO">${bodyText} = testingRobotFrameworkScripts1</msg>
+<var>${bodyText}</var>
+<arg>${validateParagraphBody}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.344827" elapsed="0.014737"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${bodyText}</arg>
+<arg>${expectedParagraphBody}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.359564" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:03.334677" elapsed="0.025887"/>
+</kw>
+<kw name="Validate Tag &quot;${Tag}&quot;" owner="articleResource" source_name="Validate Tag &quot;${expectedTag}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:03.364964" level="INFO">Waited for Element with selector css=ul.tag-list li at state visible</msg>
+<arg>${validateTags}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.360564" elapsed="0.004400"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:47:03.374477" level="INFO">Text: 'RobotFramework'</msg>
+<msg time="2025-05-23T09:47:03.374477" level="INFO">${tagText} = RobotFramework</msg>
+<var>${tagText}</var>
+<arg>${validateTags}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.364964" elapsed="0.009513"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${tagText}</arg>
+<arg>${expectedTag}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.374477" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:03.360564" elapsed="0.014912"/>
+</kw>
+<arg>${title}</arg>
+<arg>${paragraph}</arg>
+<arg>${tag}</arg>
+<status status="PASS" start="2025-05-23T09:47:03.293570" elapsed="0.081906"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-05-23T09:46:53.098760" elapsed="10.276716"/>
+</iter>
+<iter>
+<kw name="Click Home" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:03.380487" level="INFO">Waited for Element with selector text=Home at state visible</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.376479" elapsed="0.004008"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:03.381479" level="INFO">Clicks the element 'text=Home'.</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.381479" elapsed="0.035854"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:03.376479" elapsed="0.040854"/>
+</kw>
+<kw name="Click Global Feed Button" owner="articleResource">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:03.419357" level="INFO">Clicks the element 'button:has-text("Global Feed")'.</msg>
+<arg>${globalFeedButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.418841" elapsed="0.046358"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:08.466819" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:03.466207" elapsed="5.000612"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:03.417333" elapsed="5.049486"/>
+</kw>
+<kw name="Click Active Preview" owner="articleResource">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-05-23T09:47:08.482409" level="INFO">Found locator('div.article-preview').first(),locator('div.article-preview').nth(1),locator('div.article-preview').nth(2) Locators successfully.</msg>
+<msg time="2025-05-23T09:47:08.483406" level="INFO">${articlePreviewIndex} = ['div.article-preview &gt;&gt; nth=0', 'div.article-preview &gt;&gt; nth=1', 'div.article-preview &gt;&gt; nth=2']</msg>
+<var>${articlePreviewIndex}</var>
+<arg>${articlePreview}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:08.468620" elapsed="0.014786"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:08.485207" level="INFO">Clicks the element 'div.article-preview &gt;&gt; nth=2'.</msg>
+<arg>${articlePreviewIndex}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:08.483406" elapsed="0.050352"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:13.535449" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:08.533758" elapsed="5.001691"/>
+</kw>
+<arg>${i}</arg>
+<status status="PASS" start="2025-05-23T09:47:08.467471" elapsed="5.067978"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2025-05-23T09:47:13.536589" level="INFO">${article} = {'title': 'RobotFramework', 'paragraph': 'testingRobotFrameworkScripts', 'tag': 'RobotFramework'}</msg>
+<var>${article}</var>
+<arg>${ARTICLES}</arg>
+<arg>${i}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.535449" elapsed="0.001140"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:47:13.537588" level="INFO">${title} = RobotFramework</msg>
+<var>${title}</var>
+<arg>${article}</arg>
+<arg>title</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.537588" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:47:13.539238" level="INFO">${paragraph} = testingRobotFrameworkScripts</msg>
+<var>${paragraph}</var>
+<arg>${article}</arg>
+<arg>paragraph</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.538589" elapsed="0.000649"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-05-23T09:47:13.539238" level="INFO">${tag} = RobotFramework</msg>
+<var>${tag}</var>
+<arg>${article}</arg>
+<arg>tag</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.539238" elapsed="0.001147"/>
+</kw>
+<kw name="Validate Article Data" owner="articleResource">
+<kw name="Validate Article Title &quot;${Title}&quot;" owner="articleResource" source_name="Validate Article Title &quot;${articleTitle}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:13.556175" level="INFO">Waited for Element with selector css=div.article-page h1 at state visible</msg>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.544387" elapsed="0.011788"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:47:13.574746" level="INFO">Text: 'RobotFramework'</msg>
+<msg time="2025-05-23T09:47:13.574746" level="INFO">${textTitle} = RobotFramework</msg>
+<var>${textTitle}</var>
+<arg>${validateArticleTitleMessage}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.557175" elapsed="0.018561"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${textTitle}</arg>
+<arg>${articleTitle}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.575736" elapsed="0.000994"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:13.541395" elapsed="0.035335"/>
+</kw>
+<kw name="Validate Paragraph Body &quot;${Paragraph}&quot;" owner="articleResource" source_name="Validate Paragraph Body &quot;${expectedParagraphBody}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:13.584516" level="INFO">Waited for Element with selector css=div.article-content p at state visible</msg>
+<arg>${validateParagraphBody}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.577735" elapsed="0.006781"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:47:13.598993" level="INFO">Text: 'testingRobotFrameworkScripts'</msg>
+<msg time="2025-05-23T09:47:13.598993" level="INFO">${bodyText} = testingRobotFrameworkScripts</msg>
+<var>${bodyText}</var>
+<arg>${validateParagraphBody}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.584516" elapsed="0.014477"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${bodyText}</arg>
+<arg>${expectedParagraphBody}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.598993" elapsed="0.001140"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:13.576730" elapsed="0.023403"/>
+</kw>
+<kw name="Validate Tag &quot;${Tag}&quot;" owner="articleResource" source_name="Validate Tag &quot;${expectedTag}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:13.607132" level="INFO">Waited for Element with selector css=ul.tag-list li at state visible</msg>
+<arg>${validateTags}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.601134" elapsed="0.005998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:47:13.616903" level="INFO">Text: 'RobotFramework'</msg>
+<msg time="2025-05-23T09:47:13.616903" level="INFO">${tagText} = RobotFramework</msg>
+<var>${tagText}</var>
+<arg>${validateTags}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.607132" elapsed="0.009771"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${tagText}</arg>
+<arg>${expectedTag}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.616903" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:13.600133" elapsed="0.016770"/>
+</kw>
+<arg>${title}</arg>
+<arg>${paragraph}</arg>
+<arg>${tag}</arg>
+<status status="PASS" start="2025-05-23T09:47:13.540385" elapsed="0.076518"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-05-23T09:47:03.375476" elapsed="10.241427"/>
+</iter>
+<var>${i}</var>
+<value>0</value>
+<value>${article_count}</value>
+<status status="PASS" start="2025-05-23T09:46:42.597224" elapsed="31.019679"/>
+</for>
+<status status="PASS" start="2025-05-23T09:46:42.581542" elapsed="31.036997"/>
+</test>
+<test id="s1-s1-s2-t2" name="Update and validate Article" line="29">
+<kw name="Click Home" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:13.629637" level="INFO">Waited for Element with selector text=Home at state visible</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.625672" elapsed="0.003965"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:13.630626" level="INFO">Clicks the element 'text=Home'.</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.629637" elapsed="0.042103"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:13.624676" elapsed="0.048059"/>
+</kw>
+<kw name="Click Global Feed Button" owner="articleResource">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:13.678733" level="INFO">Clicks the element 'button:has-text("Global Feed")'.</msg>
+<arg>${globalFeedButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.677758" elapsed="0.034368"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:18.713524" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:13.712126" elapsed="5.001398"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:13.676731" elapsed="5.037309"/>
+</kw>
+<kw name="Click Active Preview" owner="articleResource">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-05-23T09:47:18.732502" level="INFO">Found locator('div.article-preview').first(),locator('div.article-preview').nth(1),locator('div.article-preview').nth(2) Locators successfully.</msg>
+<msg time="2025-05-23T09:47:18.733499" level="INFO">${articlePreviewIndex} = ['div.article-preview &gt;&gt; nth=0', 'div.article-preview &gt;&gt; nth=1', 'div.article-preview &gt;&gt; nth=2']</msg>
+<var>${articlePreviewIndex}</var>
+<arg>${articlePreview}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:18.718606" elapsed="0.014893"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:18.735884" level="INFO">Clicks the element 'div.article-preview &gt;&gt; nth=0'.</msg>
+<arg>${articlePreviewIndex}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:18.733499" elapsed="0.051513"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:23.785961" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:18.785012" elapsed="5.000949"/>
+</kw>
+<arg>0</arg>
+<status status="PASS" start="2025-05-23T09:47:18.714040" elapsed="5.071921"/>
+</kw>
+<kw name="Click Edit Button" owner="articleResource">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:23.793832" level="INFO">Clicks the element 'css=button.btn.btn-sm &gt;&gt; text=Edit Article &gt;&gt; nth=0'.</msg>
+<arg>${editButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:23.792808" elapsed="0.053503"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:23.790841" elapsed="0.055470"/>
+</kw>
+<kw name="Clear Text" owner="Browser">
+<arg>${textAreaField}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:23.849831" elapsed="0.015159"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T09:47:23.866251" level="INFO">Types the text 'UpdatedtestingRobotFrameworkScripts' in the given field.</msg>
+<arg>${textAreaField}</arg>
+<arg>${updatedarticleDescription}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:23.864990" elapsed="0.405759"/>
+</kw>
+<kw name="Click Update Article" owner="articleResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:24.288290" level="INFO">Waited for Element with selector button:has-text("Update Article") at state visible</msg>
+<arg>${updateArticleButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:24.272750" elapsed="0.015689"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:24.290357" level="INFO">Clicks the element 'button:has-text("Update Article")'.</msg>
+<arg>${updateArticleButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:24.288439" elapsed="0.066376"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:29.357444" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:24.354815" elapsed="5.002629"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:24.271748" elapsed="5.085696"/>
+</kw>
+<kw name="Click Home" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:29.369038" level="INFO">Waited for Element with selector text=Home at state visible</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:29.359237" elapsed="0.009801"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:29.370193" level="INFO">Clicks the element 'text=Home'.</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:29.369038" elapsed="0.046983"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:29.358584" elapsed="0.057437"/>
+</kw>
+<kw name="Click Global Feed Button" owner="articleResource">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:29.426581" level="INFO">Clicks the element 'button:has-text("Global Feed")'.</msg>
+<arg>${globalFeedButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:29.425581" elapsed="0.054167"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:34.480299" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:29.479748" elapsed="5.000551"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:29.424584" elapsed="5.055715"/>
+</kw>
+<kw name="Click Active Preview" owner="articleResource">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-05-23T09:47:34.496132" level="INFO">Found locator('div.article-preview').first(),locator('div.article-preview').nth(1),locator('div.article-preview').nth(2) Locators successfully.</msg>
+<msg time="2025-05-23T09:47:34.496132" level="INFO">${articlePreviewIndex} = ['div.article-preview &gt;&gt; nth=0', 'div.article-preview &gt;&gt; nth=1', 'div.article-preview &gt;&gt; nth=2']</msg>
+<var>${articlePreviewIndex}</var>
+<arg>${articlePreview}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:34.483301" elapsed="0.012831"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:34.497127" level="INFO">Clicks the element 'div.article-preview &gt;&gt; nth=0'.</msg>
+<arg>${articlePreviewIndex}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:34.497127" elapsed="0.051636"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:39.549958" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:34.549786" elapsed="5.000172"/>
+</kw>
+<arg>0</arg>
+<status status="PASS" start="2025-05-23T09:47:34.481305" elapsed="5.068653"/>
+</kw>
+<kw name="Validate Paragraph Body &quot;${updatedarticleDescription}&quot;" owner="articleResource" source_name="Validate Paragraph Body &quot;${expectedParagraphBody}&quot;">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:39.563143" level="INFO">Waited for Element with selector css=div.article-content p at state visible</msg>
+<arg>${validateParagraphBody}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:39.552295" elapsed="0.010848"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T09:47:39.588375" level="INFO">Text: 'UpdatedtestingRobotFrameworkScripts'</msg>
+<msg time="2025-05-23T09:47:39.588375" level="INFO">${bodyText} = UpdatedtestingRobotFrameworkScripts</msg>
+<var>${bodyText}</var>
+<arg>${validateParagraphBody}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:39.563143" elapsed="0.025232"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${bodyText}</arg>
+<arg>${expectedParagraphBody}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-23T09:47:39.589710" elapsed="0.001063"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:39.551274" elapsed="0.039499"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:13.622675" elapsed="25.968098"/>
+</test>
+<test id="s1-s1-s2-t3" name="Delete Articles" line="42">
+<kw name="Click Home" owner="loginResource">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T09:47:39.616131" level="INFO">Waited for Element with selector text=Home at state visible</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T09:47:39.606905" elapsed="0.009226"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:39.617662" level="INFO">Clicks the element 'text=Home'.</msg>
+<arg>${homeButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:39.616131" elapsed="0.030685"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:39.605905" elapsed="0.040911"/>
+</kw>
+<kw name="Click Global Feed Button" owner="articleResource">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:39.650379" level="INFO">Clicks the element 'button:has-text("Global Feed")'.</msg>
+<arg>${globalFeedButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:39.649379" elapsed="0.062716"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:44.713533" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:39.712095" elapsed="5.001438"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:39.646816" elapsed="5.066717"/>
+</kw>
+<kw name="Click Active Preview" owner="articleResource">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-05-23T09:47:44.730246" level="INFO">Found locator('div.article-preview').first(),locator('div.article-preview').nth(1),locator('div.article-preview').nth(2) Locators successfully.</msg>
+<msg time="2025-05-23T09:47:44.731254" level="INFO">${articlePreviewIndex} = ['div.article-preview &gt;&gt; nth=0', 'div.article-preview &gt;&gt; nth=1', 'div.article-preview &gt;&gt; nth=2']</msg>
+<var>${articlePreviewIndex}</var>
+<arg>${articlePreview}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:44.716866" elapsed="0.014388"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:44.732255" level="INFO">Clicks the element 'div.article-preview &gt;&gt; nth=0'.</msg>
+<arg>${articlePreviewIndex}[${index}]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:44.731254" elapsed="0.033830"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:49.766310" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:44.765084" elapsed="5.001226"/>
+</kw>
+<arg>0</arg>
+<status status="PASS" start="2025-05-23T09:47:44.715600" elapsed="5.050710"/>
+</kw>
+<kw name="Promise To" owner="Browser">
+<msg time="2025-05-23T09:47:49.770741" level="INFO">${promise} = &lt;Future at 0x13f841d9990 state=running&gt;</msg>
+<var>${promise}</var>
+<arg>Wait For Alert</arg>
+<arg>action=accept</arg>
+<tag>Wait</tag>
+<doc>Wrap a Browser library keyword and make it a promise.</doc>
+<status status="PASS" start="2025-05-23T09:47:49.767232" elapsed="0.004510"/>
+</kw>
+<kw name="Click Delete Button" owner="articleResource">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T09:47:49.773747" level="INFO">Clicks the element 'css=button.btn.btn-sm &gt;&gt; text=Delete Article &gt;&gt; nth=0'.</msg>
+<arg>${deleteButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T09:47:49.772746" elapsed="0.049011"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:49.771742" elapsed="0.050015"/>
+</kw>
+<kw name="Wait For" owner="Browser">
+<arg>${promise}</arg>
+<tag>Wait</tag>
+<doc>Waits for promises to finish and returns results from them.</doc>
+<status status="PASS" start="2025-05-23T09:47:49.822758" elapsed="0.002000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T09:47:51.826151" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T09:47:49.824758" elapsed="2.001393"/>
+</kw>
+<status status="PASS" start="2025-05-23T09:47:39.600373" elapsed="12.226431"/>
+</test>
+<status status="PASS" start="2025-05-23T09:46:32.922749" elapsed="78.914860"/>
+</suite>
+<status status="PASS" start="2025-05-23T09:45:39.271869" elapsed="132.686597"/>
+</suite>
+<status status="PASS" start="2025-05-23T09:45:39.214577" elapsed="132.745867"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testscripts" id="s1" pass="6" fail="0" skip="0">Testscripts</stat>
+<stat name="Tests" id="s1-s1" pass="6" fail="0" skip="0">Testscripts.Tests</stat>
+<stat name="conduitCreatefunction" id="s1-s1-s1" pass="3" fail="0" skip="0">Testscripts.Tests.conduitCreatefunction</stat>
+<stat name="Conduitupdatedelete" id="s1-s1-s2" pass="3" fail="0" skip="0">Testscripts.Tests.Conduitupdatedelete</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-23T09:46:19.970101" level="WARN">Multiple tests with name 'Create a New Article with' executed in suite 'Testscripts.Tests.conduitCreatefunction'.</msg>
+<msg time="2025-05-23T09:46:26.413998" level="WARN">Multiple tests with name 'Create a New Article with' executed in suite 'Testscripts.Tests.conduitCreatefunction'.</msg>
+</errors>
+</robot>
