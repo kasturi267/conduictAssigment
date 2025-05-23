@@ -3,21 +3,6 @@ Library           Browser
 Variables        ../pages/articlePage.py
 
 *** Keywords ***
-# Click New Article
-#     Wait For Elements State    ${newArticle}
-#     Click    ${newArticle}
-
-# Enters Article details with "${articleTitle}", "${about}", "${articleDescription}", "${articleTags}"
-#     Wait For Elements State    ${articleTitleField}
-#     Type Text    ${articleTitleField}    ${articleTitle}
-#     Type Text    ${aboutField}    ${about}
-#     Type Text    ${textAreaField}    ${articleDescription}
-#     Type Text    ${tags}    ${articleTags}
-
-# Click Publish Article
-#     Wait For Elements State    ${publishArticleButton}
-#     Click    ${publishArticleButton}    
-
 Click New Article
     Wait For Elements State    ${newArticle}    visible    timeout=10s
     Click    ${newArticle}
@@ -75,4 +60,3 @@ Click Edit Button
 
 Click Delete Button
     Click    ${deleteButton}
-
